@@ -1,0 +1,18 @@
+{
+  "name": "@kano/kwc-reward",
+  "version": "0.0.1",
+  "main": "kwc-reward.js",
+  "dependencies": {
+    "@kano/kwc-icons": "^3.0.0-beta.2",
+    "@kano/kwc-style": "^3.0.0-beta.2",
+    "@polymer/iron-icon": "^3.0.0-pre.21",
+    "@polymer/polymer": "^3.0.0",
+    "@webcomponents/shadycss": "https://github.com/webcomponents/shadycss",
+    "web-animations-js": "^2.3.1"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}

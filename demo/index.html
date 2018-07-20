@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+		<link rel="stylesheet" type="text/css" href="../node_modules/@kano/kwc-style/fonts/bariol.css">
+
+		<title>kwc-reward demo</title>
+
+		<script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+		<script type="module">
+			import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+			import '@polymer/iron-demo-helpers/demo-snippet';
+		</script>
+
+		<script src="../node_modules/web-animations-js/web-animations-next-lite.min.js"></script>
+		<script type="module" src="../kwc-reward.js"></script>
+
+		<custom-style>
+			<style is="custom-style" include="demo-pages-shared-styles">
+			</style>
+		</custom-style>
+	</head>
+
+	<body>
+		<div class="vertical-section-container centered">
+			<h3>Basic kwc-reward demo</h3>
+			<demo-snippet>
+				<template>
+					<kwc-reward id="modal-1" heading="Unlocked Items" close-icon="https://goo.gl/L5X4o4" close-label="to map" closable>
+						<img src="https://goo.gl/XRX8dF" slot="middle">
+					</kwc-reward>
+					<button id="modal-1">Open Modal</button>
+					<script type="text/javascript">
+						document.addEventListener('WebComponentsReady', () => {
+							const modal1 = document.querySelector("kwc-reward#modal-1");
+							const button1 = document.querySelector("button#modal-1");
+
+							button1.addEventListener("click", () => {
+								modal1.open();
+							});
+						});
+					</script>
+				</template>
+			</demo-snippet>
+
+			<h3>Modal kwc-reward demo</h3>
+			<demo-snippet>
+				<template>
+					<kwc-reward id="modal-2" heading="Unlocked Items" close-position="left" closable>
+						<img src="https://goo.gl/XRX8dF" slot="middle">
+					</kwc-reward>
+					<button id="modal-2">Open Modal</button>
+					<script type="text/javascript">
+						document.addEventListener('WebComponentsReady', () => {
+							const modal2 = document.querySelector("kwc-reward#modal-2");
+							const button2 = document.querySelector("button#modal-2");
+
+							button2.addEventListener("click", () => {
+								modal2.open();
+							});
+						});
+					</script>
+				</template>
+			</demo-snippet>
+		</div>
+	</body>
+
+</html>
