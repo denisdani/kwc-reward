@@ -30,40 +30,18 @@
 			<h3>Basic kwc-reward demo</h3>
 			<demo-snippet>
 				<template>
-					<kwc-reward id="modal-1" heading="Unlocked Items" close-icon="https://goo.gl/L5X4o4" close-label="to map" closable>
+					<kwc-reward heading="Unlocked Items" close-icon="https://goo.gl/L5X4o4" close-label="to map" closable>
 						<img src="https://goo.gl/XRX8dF" slot="middle">
 					</kwc-reward>
-					<button id="modal-1">Open Modal</button>
-					<script type="text/javascript">
-						document.addEventListener('WebComponentsReady', () => {
-							const modal1 = document.querySelector("kwc-reward#modal-1");
-							const button1 = document.querySelector("button#modal-1");
-
-							button1.addEventListener("click", () => {
-								modal1.open();
-							});
-						});
-					</script>
 				</template>
 			</demo-snippet>
 
 			<h3>Modal kwc-reward demo</h3>
 			<demo-snippet>
 				<template>
-					<kwc-reward id="modal-2" heading="Unlocked Items" close-position="left" closable>
+					<kwc-reward heading="Unlocked Items" close-position="left" closable>
 						<img src="https://goo.gl/XRX8dF" slot="middle">
 					</kwc-reward>
-					<button id="modal-2">Open Modal</button>
-					<script type="text/javascript">
-						document.addEventListener('WebComponentsReady', () => {
-							const modal2 = document.querySelector("kwc-reward#modal-2");
-							const button2 = document.querySelector("button#modal-2");
-
-							button2.addEventListener("click", () => {
-								modal2.open();
-							});
-						});
-					</script>
 				</template>
 			</demo-snippet>
 		</div>

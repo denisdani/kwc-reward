@@ -80,7 +80,7 @@ class KwcReward extends PolymerElement {
 				}
 			</style>
 			<div class="content">
-				<div role="button" class="closable" position$="[[closePosition]]" on-click="close" hidden$="[[!closable]]">
+				<div role="button" class="closable" position$="[[closePosition]]" hidden$="[[!closable]]" dialog-dismiss$="[[closable]]">
 					<template is="dom-if" if="[[closeIcon]]">
 						<iron-icon src="[[closeIcon]]"></iron-icon>
 					</template>
